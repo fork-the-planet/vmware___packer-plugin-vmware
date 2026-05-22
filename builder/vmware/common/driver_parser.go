@@ -274,7 +274,7 @@ func tokenizeNetworkMapConfig(in chan byte) chan string {
 	var quote bool
 	var lastnewline bool
 
-	// This logic is very similar to tokenizeDhcpConfig except she needs to handle
+	// This logic is very similar to tokenizeDhcpConfig except it needs to handle
 	// braces, and we don't. This is the only major difference from us.
 
 	out := make(chan string)
@@ -1141,7 +1141,7 @@ func ReadDhcpConfiguration(fd *os.File) (DhcpConfiguration, error) {
 		return nil, err
 	}
 
-	// This closure is just to the goroutine that follows it in recursively
+	// This closure is just for the goroutine that follows it in recursively
 	// walking through all the declarations and writing them individually to a
 	// channel.
 	var walkDeclarations func(root pDeclaration, out chan *ConfigDeclaration)

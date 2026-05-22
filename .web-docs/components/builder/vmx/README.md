@@ -682,7 +682,7 @@ You can tune this delay on a per-builder basis by specifying
 <!-- End of code generated from the comments of the VNCConfig struct in bootcommand/config.go; -->
 
 
-**Optional**
+**Optional**:
 
 <!-- Code generated from the comments of the BootConfig struct in bootcommand/config.go; DO NOT EDIT MANUALLY -->
 
